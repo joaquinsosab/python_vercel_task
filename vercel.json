@@ -1,18 +1,18 @@
 {
     "builds": [
       {
-        "src": "carpeta_de_proyecto/wsgi.py",
+        "src": "python_vercel_task/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
+          "runtime": "python3.12.7"
         }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "carpeta_de_proyecto/wsgi.py"
+        "dest": "python_vercel_task/wsgi.py"
       }
     ]
   }
